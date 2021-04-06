@@ -1,0 +1,29 @@
+form {
+    h1 {
+        font-size: 24px;
+        color: #f84d0f;
+        margin: 0px 0px 20px 0px;
+    }
+    mat-form-field {
+        width: 100%;
+        font-size: 13px;
+        font-family: 'Cabin', sans-serif;
+
+        textarea {
+            height: 150px;
+            resize: none;
+        }
+    
+        .excelIcon {
+            cursor: pointer;
+        }
+    }
+
+    button {
+        font-family: 'Cabin', sans-serif;
+        mat-icon {
+            width: 17px;
+            height: 24px;
+        }
+    }
+}

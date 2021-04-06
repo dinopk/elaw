@@ -1,0 +1,15 @@
+<section [id]="'modal'+ data.theme" [class]="'modal ' + data.theme">
+    <div class="img">
+        <mat-icon [svgIcon]="data.icon"></mat-icon>
+    </div>
+    <h1 [innerHTML]="data.title"></h1>
+    <div class="centerBlock">
+        <p [innerHTML]="data.description"></p>
+    </div>
+    <div class="d-flex">
+        <button *ngIf="data.buttonCancelText" type="button" [id]="'modal' + data.theme + '-btn__cancel'" (click)="onNoClick(false)" class="btn__cancel">{{data.buttonCancelText}}</button>
+        <span class="example-spacer"></span>
+        <button type="submit" (click)="onNoClick(true)" [id]="'modal' + data.theme + '-btn__send'" [ngClass]="data.buttonCancelText ? 'btn__send' : 'btn__send full-width-button'">{{data.buttonSuccessText}}</button>
+    </div>
+</section>
+  

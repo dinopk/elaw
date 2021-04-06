@@ -1,0 +1,10 @@
+.bodySection {
+    position: relative;
+    .bgStandard {
+        position: absolute;
+        width: 100%;
+        height: 140px;
+        background-color: #4E4E4E;
+        z-index: -1;
+    }
+}

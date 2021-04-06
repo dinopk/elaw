@@ -1,0 +1,37 @@
+.body_btn {
+    button {
+        font-family: 'Cabin', sans-serif;
+        border-radius: 50%;
+        width: 70px;
+        height: 70px;
+        margin-top: 40px;
+        mat-icon {
+            margin-bottom: 4px;
+        }
+    }
+}
+
+.products_cards {
+    mat-card {
+        border-radius: 15px;
+        box-shadow: 3px 3px 5px rgba($color: #000000, $alpha: .2);
+        background: url('../../../assets/images/icons/brand-identity.svg') no-repeat;
+        background-size: 9%;
+        background-position: 10px 7px;
+        font-family: 'Cabin', sans-serif;
+        &:hover {
+            transform: scale(1.1);
+        }
+
+        h3 {
+            padding-top: 15px;
+            color: #707070;
+        }
+        .contentCard {
+            p {
+                margin-top: 10px;
+                margin-bottom: 0;
+            }
+        }
+    }
+}

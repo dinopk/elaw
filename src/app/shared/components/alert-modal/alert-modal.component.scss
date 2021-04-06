@@ -1,0 +1,93 @@
+.modal {
+    .img {
+        text-align: center;
+        mat-icon {
+            width: 70px;
+            height: auto;
+            font-size: 40px;
+        }
+    }
+
+    button {
+        cursor: pointer;
+    }
+  
+    h1 {
+        font-size: 23px;
+        text-align: center;
+        margin-bottom: 0px;
+    }
+  
+    p {
+        width: 238px;
+        text-align: center;
+        margin-bottom: 20px;
+        font-size: 16px;
+    }
+  
+    .btn__cancel {
+        width: 100px;
+        font-size: 16px;
+        padding: .7rem 0;
+        border-radius: 50px;
+    }
+  
+    .btn__send {
+        width: 180px;
+        background: none;
+        font-size: 16px;
+        padding: .7rem 0;
+        border-radius: 50px;
+    }
+  
+    .full-width-button {
+      width: 100%;
+    }
+  }
+
+.Delete {
+    .img {
+      mat-icon {
+        color: #FF0000;
+      }
+    }
+  
+    h1 {
+      color: #FF0000;
+    }
+  
+    .btn__cancel {
+      box-shadow: 3px 5px 4px #FF000040;
+      background: #FF0000 0% 0% no-repeat padding-box;
+      border: 1px solid #FF0000;
+      color: #FFFFFF;
+    }
+  
+    .btn__send {
+      color: #FF0000;
+      border: 1px solid #FF0000;
+    }
+}
+
+.Success {
+    .img {
+      mat-icon {
+        color: #BCC300;
+      }
+    }
+  
+    h1 {
+      color: #BCC300;
+    }
+  
+    .btn__cancel {
+      color: #BCC300;
+      border: 1px solid #BCC300;
+    }
+  
+    .btn__send {
+      background: #BCC300 0% 0% no-repeat padding-box;
+      border: 1px solid #BCC300;
+      color: #FFFFFF;
+    }
+}

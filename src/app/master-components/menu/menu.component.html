@@ -1,0 +1,19 @@
+<mat-toolbar>
+  <button class="menuMobile" mat-button [matMenuTriggerFor]="menuMobile">
+    <mat-icon>menu</mat-icon>
+  </button>
+  <mat-menu #menuMobile="matMenu" xPosition="before">
+    <button mat-menu-item [routerLink]="['/home']" routerLinkActive="active">Produtos</button>
+  </mat-menu>
+    <img class="logo" src="../../../assets/images/elaw-logo.png" alt="Logo Elaw"/>
+    <button mat-button class="spanMenu d-flex" [routerLink]="['/home']" routerLinkActive="active">Produtos</button>
+    <span class="example-spacer itensMobile"></span>
+    <button mat-button [matMenuTriggerFor]="menu">
+        <mat-icon svgIcon="user"></mat-icon>
+        <span class="itensMobile">Victor Marques</span>
+    </button>
+    <mat-menu #menu="matMenu" xPosition="before">
+      <button mat-menu-item>Meus dados</button>
+      <button mat-menu-item>Sair</button>
+    </mat-menu>
+  </mat-toolbar>

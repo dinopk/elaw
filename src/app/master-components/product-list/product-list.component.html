@@ -1,0 +1,39 @@
+<div class="mdc-layout-grid__inner body_btn">
+    <div class="mdc-layout-grid__cell--span-12 txtCenter m-t-1">
+        <button matTooltip="Adicionar produtos" (click)="openDialogCreateProducts()" mat-raised-button color="primary">
+            <mat-icon matSuffix>add</mat-icon>
+        </button>
+    </div>
+</div>
+
+<div class="mdc-layout-grid__inner m-t-1 products_cards">
+    <div *ngIf="productList?.length < 1" class="mdc-layout-grid__cell--span-12">
+        <p>Não há nenhum produto. Clique no botão adicionar acima, para adicionar.</p>
+    </div>
+    <div *ngFor="let products of productList" class="mdc-layout-grid__cell--span-4">
+        <mat-card>
+            <div class="mdc-layout-grid__inner">
+                <div class="mdc-layout-grid__cell--span-12 d-flex">
+                    <h3>{{products.name}} - {{products.value}}</h3>
+                    <span class="example-spacer"></span>
+                    <button (click)="openDialogEditProducts(products)" mat-button color="accent">
+                        <mat-icon>edit</mat-icon>
+                    </button>
+                    <button (click)="openDialogDeleteProducts(products)" mat-button color="warn">
+                        <mat-icon>delete</mat-icon>
+                    </button>
+                </div>
+            </div>
+            <div class="mdc-layout-grid__inner">
+                <div class="mdc-layout-grid__cell--span-12 contentCard">
+                    <p>Modelo</p>
+                    <strong>
+                        {{products.model}}
+                    </strong>
+                    <p>Descrição:</p>
+                    <p>"{{products.description}}"</p>
+                </div>
+            </div>
+        </mat-card>
+    </div>
+</div>
